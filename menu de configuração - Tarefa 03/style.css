@@ -1,0 +1,31 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 1000px;
+    margin: auto;
+  }
+
+  input {
+    display: none;
+  }
+
+  label {
+    display: block; 
+    background: #b54572; 
+    color: rgb(255, 255, 255); 
+    padding: 30px; 
+    cursor: pointer; 
+    border: 4px solid #98375e;
+  }
+
+  .conteudo {
+    max-height: 0; 
+    overflow: hidden; 
+    background: #ffcada; 
+    transition: 0.3s; 
+    padding: 0 10px; 
+  }
+
+ input:checked + label + .conteudo {
+        max-height: 200px;
+        padding: 20px; 
+    }
