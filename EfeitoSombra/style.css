@@ -1,0 +1,41 @@
+body{
+    background: rgb(150, 64, 96);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    font-size: 80px;
+}
+
+.codigo span {
+    filter: blur(30px);
+    transition: 0,3s;
+}
+
+ .codigo span:hover,
+ .codigo span:active{
+     filter: blur(0px);
+     transform: scale(1.08);
+}
+
+.codigo span:hover + span{
+    filter: blur(6px);
+} 
+
+.codigo span:hover + span + span{
+    filter: blur(12px);
+}
+
+.codigo span:has(+ span:hover){
+    filter:blur(6px);
+}
+
+.codigo span:has(+ span + span:hover){
+    filter:blur(12px);
+}
