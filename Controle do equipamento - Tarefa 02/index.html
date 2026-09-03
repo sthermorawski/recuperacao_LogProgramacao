@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle do Equipamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1 id="titulo">Sther Morawski - Controle de equipamento</h1>
+        </header>
+        <section id="controle" class="card">
+            <button id="status" class="off">Desligado</button><br>
+            <input type="color" id="colorInput">
+            <input type="button" id="colorButton" value="escolha a cor e clique para mudar a cor do titulo" onclick="changeColor()" disabled>
+            <button id="limpar" onclick="ResetColor()">limpar</button>
+        </section>
+    </main>
+    <script src="script.js">
+    </script>
+</body>
+</html>
